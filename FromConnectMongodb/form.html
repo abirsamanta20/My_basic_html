@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Fillup</title>
+    <link rel="stylesheet" href="/form.css" />
+  </head>
+  <body>
+    <div container>
+      <div class="wrapper">
+        <!-- <h2 class="form-title">Welcome to My Form</h2> -->
+        <div class="form-title">
+          <img src="./login_image_1.png" alt="Login Image" />
+          <h1>Hello, Sir!</h1>
+          <p>Welcome to My Form</p>
+        </div>
+
+        <!-- Heading above the container -->
+        <div class="container">
+          <form class="form" action="/post" method="post">
+            <label for="reg_no">Registration Number:</label>
+            <input
+              type="text"
+              id="reg_no"
+              name="reg_no"
+              placeholder="registration number"
+              required
+            />
+
+            <label for="f_name">First Name:</label>
+            <input
+              type="text"
+              id="f_name"
+              name="f_name"
+              placeholder="first name"
+              required
+            />
+
+            <label for="l_name">Last Name:</label>
+            <input
+              type="text"
+              id="l_name"
+              name="l_name"
+              placeholder="last name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="designation">Designation:</label>
+            <select name="designation" id="designation">
+              <option value="">None</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Quality Assurance Engineer">
+                Quality Assurance Engineer
+              </option>
+              <option value="Data Lead">Data Lead</option>
+              <option value="Customer Service">Customer Service</option>
+            </select>
+
+            <!-- <label for="pdf_upload">Upload Pdf file:</label>
+            <input type="file" id="pdf_upload" name="pdf_upload" accept=".pdf" /> -->
+            <button class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

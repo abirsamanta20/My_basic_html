@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        /* width: 100%; */
+
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(109, 105, 105);
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Saurabh</td>
+        <td>Pune</td>
+        <td>Maharastra</td>
+        <td>India</td>
+      </tr>
+      <tr>
+        <td>Abhisek</td>
+        <td>Kolkta</td>
+        <td>West Bengal</td>
+        <td>India</td>
+      </tr>
+      <tr>
+        <td>Babu lal</td>
+        <td>Jharkhand</td>
+        <td>Jharkhand</td>
+        <td>India</td>
+      </tr>
+      <tr>
+        <td>Abir</td>
+        <td>Bhagwanpur</td>
+        <td>West Bengal</td>
+        <td>India</td>
+      </tr>
+    </table>
+    <table>
+      <colgroup>
+        <col span="2" style="background: #456676" />
+      </colgroup>
+      <tr>
+        <th colspan="2">Country</th>
+        <th>State</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>dfbd</td>
+        <td>dsfbds</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>Purba MediniPur</td>
+        <td>Kolkata</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>Jharkhand</td>
+        <td>Jharkhand</td>
+      </tr>
+    </table>
+  </body>
+</html>

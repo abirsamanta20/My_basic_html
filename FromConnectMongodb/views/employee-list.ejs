@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee List</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: #f0f2f5;
+        padding: 40px;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-size: 2.8em;
+      }
+
+      .table-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        background: #fff;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 17px;
+      }
+
+      thead {
+        background: #007bff;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      th,
+      td {
+        padding: 16px 20px;
+        text-align: left;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+
+      tr:hover {
+        background-color: #e9ecef;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      th {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+
+      .print-btn {
+        display: block;
+        margin: 30px auto 0;
+        background-color: #28a745;
+        color: #fff;
+        padding: 14px 28px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+      }
+      .btn {
+        display: block;
+        margin: 30px auto 0;
+        background-color: #28a745;
+        color: #fff;
+        padding: 14px 28px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+      }
+
+      .print-btn:hover {
+        background-color: #218838;
+      }
+
+      @media (max-width: 768px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        th {
+          display: none;
+        }
+
+        td {
+          padding: 12px 20px;
+          border-bottom: 1px solid #ddd;
+          position: relative;
+          padding-left: 50%;
+        }
+
+        td::before {
+          position: absolute;
+          top: 12px;
+          left: 20px;
+          font-weight: bold;
+          color: #555;
+          content: attr(data-label);
+        }
+
+        tr {
+          background-color: #fff;
+          margin-bottom: 10px;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+      }
+
+      @media print {
+        .print-btn,
+        h1 {
+          display: none;
+        }
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .table-container {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📋 Your Submited Details</h1>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Reg No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Designation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% employees.forEach(emp => { %>
+          <tr>
+            <td data-label="Reg No"><%= emp.reg_no %></td>
+            <td data-label="First Name"><%= emp.f_name %></td>
+            <td data-label="Last Name"><%= emp.l_name %></td>
+            <td data-label="Email"><%= emp.email %></td>
+            <td data-label="Designation"><%= emp.designation %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">
+      🖨️ Print Your Submited Details
+    </button>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .first {
+        background-color: rgb(255, 196, 0);
+      }
+      #green {
+        background-color: green;
+      }
+      table {
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      th {
+        background-color: rgb(160, 154, 154);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="first">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus
+      iste perspiciatis nemo libero maxime? Facere non sed autem fuga?
+    </p>
+
+    <p id="green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae
+      reiciendis sequi minus neque sint cumque culpa, quia sapiente vitae vel
+      consectetur qui praesentium pariatur expedita, sed quaerat unde ullam!
+    </p>
+
+    <h2 class="first">Test 1</h2>
+    <h3 id="green">Test 2</h3>
+
+    <table>
+      <th>Name</th>
+      <th>Video</th>
+      <tr>
+        <td>Abir Samanta</td>
+        <td onclick="alertMassage()">Start Video</td>
+      </tr>
+      <tr>
+        <td>Suman Duuta</td>
+        <td onclick="alertMassage()">Start Video</td>
+      </tr>
+      <tr>
+        <td>Saurabh Bansode</td>
+        <td>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/I7LrS1z_WNA?si=-q3ZKA7ZqC8lLN9W"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function alertMassage() {
+        alert("Please Upload Your Video!");
+      }
+    </script>
+  </body>
+</html>

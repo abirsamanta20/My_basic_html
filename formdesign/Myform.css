@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default body margin */
+  background: #b0c9ee; /* Optional background */
+}
+
+.container {
+  width: 100%;
+  width: 1000px; /* Limit width */
+  height: 700px;
+  background: #b4e3e9; /* corrected (instead of #ffff) */
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.form-box {
+  width: 100%;
+  max-width: 400px; /* Limit width */
+  height: 550px;
+  background: #fff; /* corrected (instead of #ffff) */
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.form-box .input-box {
+  border-radius: 40px;
+}

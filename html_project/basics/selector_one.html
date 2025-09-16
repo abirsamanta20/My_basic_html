@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(94, 90, 90);
+        color: rgb(255, 255, 255);
+      }
+      button:hover {
+        background-color: blue;
+        color: aliceblue;
+      }
+      .one {
+        background-color: rgb(199, 199, 24);
+        color: aliceblue;
+      }
+      h2:hover {
+        background-color: orange;
+      }
+      /* div:first-child {
+        background-color: rgb(38, 153, 38);
+      } */
+      div:first-child {
+        background-color: rgb(38, 153, 38);
+      }
+      h2::before {
+        content: "Start--";
+        color: red;
+      }
+      p::first-letter {
+        background-color: aquamarine;
+        font-style: italic;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is Selectors.</h1>
+    <label for="firstName">First Name: </label>
+    <input
+      type="text"
+      placeholder="first name"
+      name=""
+      id="firstName"
+    /><br /><br />
+    <label for="dob">Date of Birth: </label>
+    <input type="date" placeholder="date of birth" name="" id="dob" />
+    <input type="button" value="Click" />
+    <label for="">are you Employee</label>
+    <input type="checkbox" name="" id="" /><br /><br />
+    <input type="reset" value="reset" />
+    <button>Submit</button>
+
+    <p class="one">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit atque,
+      laudantium, pariatur optio vitae animi suscipit a deserunt nostrum dolores
+      doloribus? Magnam libero praesentium aperiam provident ipsum vel nihil
+      eligendi.
+    </p>
+    <p class="one">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit atque,
+      laudantium, pariatur optio vitae animi suscipit a deserunt nostrum dolores
+      doloribus? Magnam libero praesentium aperiam provident ipsum vel nihil
+      eligendi.
+    </p>
+    <p class="one">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit atque,
+      laudantium, pariatur optio vitae animi suscipit a deserunt nostrum dolores
+      doloribus? Magnam libero praesentium aperiam provident ipsum vel nihil
+      eligendi.
+    </p>
+
+    <h2>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum asperiores
+      quisquam veritatis iure suscipit quasi officiis illo nulla amet fuga.
+    </h2>
+
+    <h2>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum asperiores
+      quisquam veritatis iure suscipit quasi officiis illo nulla amet fuga.
+    </h2>
+
+    <h2>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum asperiores
+      quisquam veritatis iure suscipit quasi officiis illo nulla amet fuga.
+    </h2>
+    <form>
+      <label for="dob">Date of Birth: </label>
+      <input type="date" placeholder="date of birth" name="dob" id="dob" />
+
+      <input type="button" value="Click" />
+      <input
+        style="background-color: blue; color: beige"
+        type="reset"
+        value="Reset"
+      />
+    </form>
+
+    <div>
+      <div>Abir</div>
+      <div>Subir</div>
+      <div>Saurabh</div>
+      <div>Anupam</div>
+    </div>
+  </body>
+</html>

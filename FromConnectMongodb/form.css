@@ -1,0 +1,82 @@
+/* This centers the entire form in the middle of the page */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8384db;
+}
+
+/* Form container styling */
+.container {
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #333; /* dark background */
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(7, 146, 238);
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.form select {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.form-title {
+  text-align: center;
+  color: #fcfcfc;
+  font-size: 22px;
+  margin-bottom: 40px;
+  padding: 200px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-title h1 {
+  margin: 0;
+  font-size: 110px;
+}
+
+.form-title p {
+  margin: 5px 0 0;
+  font-size: 40px;
+  color: #e4dede;
+}
+
+.form-title img {
+  width: 300px; /* Adjust size as needed */
+  vertical-align: text-top;
+}

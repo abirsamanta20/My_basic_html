@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <style>
+      body {
+        background-color: rgb(75, 74, 73);
+        color: rgb(255, 255, 255);
+      }
+      button {
+        background-color: rgb(25, 0, 247);
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form in HTML</h1>
+    <form action="url" method="GET" accept-charset="UTF-8" autocomplete="off">
+      <label for="fname">First Name: </label>
+      <input
+        type="text"
+        placeholder="first name"
+        name=""
+        value=""
+        id="fname"
+      /><br /><br />
+      <label for="pass">Password: </label>
+      <input type="password" placeholder="password" id="pass" /><br /><br />
+      <label for="dob">Date of Birth: </label>
+      <input type="date" name="" id="dob" /><br /><br />
+      <label for="city">City: </label>
+      <select name="" id="city">
+        <option value="Kolkata">Kolkata</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Medinipur">Medinipur</option></select
+      ><br /><br />
+      <input list="editors" name="editor" />
+      <datalist id="editors">
+        <option value="Kolkata">Kolkata</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+      </datalist>
+      <!-- <input type="button" value="Hello" /> -->
+      <input type="reset" value="Reset" />
+
+      <button type="submit"><b>Submit</b></button>
+    </form>
+  </body>
+</html>
